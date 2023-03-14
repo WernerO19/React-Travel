@@ -1,0 +1,34 @@
+:root {
+    --color-body: white;
+    --color-primary-500: #03a9f4;
+    --color-primary-600: #1c85be;
+    --color-primary-700: #20628b;
+    --color-primary-800: #1d415b;
+    --color-primary-900: #15232f;
+  }
+
+  .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-body);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .logo {
+    color: var(--color-primary-900);
+  }
+
+  @media screen and (max-width:768px) {
+    .navBar {
+        position: absolute;
+        background-color: var(--color-body);
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: 6rem;
+    }
+  }

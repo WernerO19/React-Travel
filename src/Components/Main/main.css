@@ -1,0 +1,195 @@
+:root {
+    --color-body: white;
+    --color-primary-500: #03a9f4;
+    --color-primary-600: #1c85be;
+    --color-primary-700: #20628b;
+    --color-primary-800: #1d415b;
+    --color-primary-900: #15232f;
+    --gradiant: linear-gradient(90deg, hsla(199, 98%, 48%, 1) 0%, hsla(203, 63%, 34%, 1) 100%);
+    --cardBG: rgb(255,255,235);
+  }
+
+.main {
+    width: 100%;
+  }
+
+.title {
+    position:relative;
+    width: max-content;
+    color: var(--color-primary-900);
+    margin: 1rem 0;
+    z-index: 2;
+  }
+.title::after {
+    position: absolute;
+    content: '';
+    background: var(--gradiant);
+    height: 5px;
+    width: 150px;
+    right: 0;
+    bottom: 1px;
+    z-index: -1;
+  }
+
+.secContent {
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.singleDestination {
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    /* padding: 1rem; */
+    border-radius: 10px;
+    align-items: center;
+    background: whitesmoke;
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    overflow: hidden;
+}
+
+.singleDestination:hover {
+    background: lightgray;
+    box-shadow:1 4px 4px rgba(85, 85, 114, 0.549);
+    transition: .3s ease;
+}
+
+.imageDiv {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imageDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s ease;
+}
+
+.imageDiv img:hover {
+    transform: scale(1.1);
+}
+
+.cardinfo{
+    padding: 1rem;
+}
+
+.destTitle {
+    color: var(--color-primary-900);
+    font-size: 1.25rem
+    ;
+}
+
+.contonent {
+    gap: .5rem;
+}
+
+.contonent .icon {
+    color: var(--color-primary-900);
+    font-size: 18px;
+}
+
+.name{
+    color: var(--color-primary-900);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.fees {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-top: 1.5px solid lightslategray;
+    border-bottom: 1.5px solid lightslategray;
+}
+
+.grade {
+    color: var(--color-primary-900);
+    max-width: 100px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grade .text{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+small {
+    text-align: center;
+    background: var(--gradiant);
+    border-radius: 1rem;
+    color: var(--color-body);
+    padding: 1px 10px;
+    font-size: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--color-primary-900);
+}
+
+.desc{
+    font-size: 13.5px;
+    color: var(--color-primary-900);
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 1rem;
+    color: var(--color-body);
+    font-weight: 600;
+    justify-content: space-between;
+    gap: .3rem;
+}
+
+.btn .icon {
+    font-size: 18px;
+    align-self: center;
+}
+
+@media screen and (min-width:499px) {
+    .secContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .singleDestination{
+        height: auto;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .title::after{
+        width: 155px !important;
+    }
+
+    .secContent{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .singleDestination{
+        height: auto;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .secContent{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .singleDestination{
+        height: auto;
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .secContent{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .singleDestination{
+        height: auto;
+    }
+}
