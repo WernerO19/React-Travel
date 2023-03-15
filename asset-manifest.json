@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-Travel/static/css/main.b5fae2b0.css",
-    "main.js": "/React-Travel/static/js/main.8b6397a4.js",
+    "main.css": "/React-Travel/static/css/main.4271e16d.css",
+    "main.js": "/React-Travel/static/js/main.cfc342d0.js",
     "static/js/787.8a220983.chunk.js": "/React-Travel/static/js/787.8a220983.chunk.js",
     "static/media/background.mp4": "/React-Travel/static/media/background.b1ff6deacf24fe4e4010.mp4",
     "static/media/bgv.mp4": "/React-Travel/static/media/bgv.083c79e396efeabc9ad9.mp4",
     "index.html": "/React-Travel/index.html",
-    "main.b5fae2b0.css.map": "/React-Travel/static/css/main.b5fae2b0.css.map",
-    "main.8b6397a4.js.map": "/React-Travel/static/js/main.8b6397a4.js.map",
+    "main.4271e16d.css.map": "/React-Travel/static/css/main.4271e16d.css.map",
+    "main.cfc342d0.js.map": "/React-Travel/static/js/main.cfc342d0.js.map",
     "787.8a220983.chunk.js.map": "/React-Travel/static/js/787.8a220983.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5fae2b0.css",
-    "static/js/main.8b6397a4.js"
+    "static/css/main.4271e16d.css",
+    "static/js/main.cfc342d0.js"
   ]
 }
