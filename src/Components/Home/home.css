@@ -16,6 +16,11 @@
     margin: auto;
 }
 
+.hidden{
+    display: none;
+    transition: .3s ease;
+}
+
 .overlay {
     position: absolute;
     height: 100%;
@@ -135,7 +140,7 @@ input[type=range]{
 }
 
 .searchOptions:hover{
-    background: var(--color-primary-600);
+    /* background: var(--color-primary-600); */
     cursor: pointer;
 }
 
@@ -163,6 +168,15 @@ span {
     color: var(--color-primary-600);
 }
 
+.select{
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+.destinationInput .dropdownIcon{
+    color: var(--color-primary-900);
+}
 
 @media screen and (min-width:500px) {
     .smallText{
@@ -221,6 +235,34 @@ span {
     .searchOptions{
         bottom: -1rem;
         padding: 10px 1rem;
+        transition: .3s ease;
+    }
+    .searchOptionsActive{
+        bottom: -19px;
+        transition: .3s ease;
+        position: absolute;
+        background: var(--gradiant);
+        color: var(--color-body);
+        width: max-content;
+        column-gap: .8rem;
+        padding: 5px 1rem;
+        border-radius: 3rem;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+    }
+
+    .searchOptionsActive span{
+        font-size: 17px;
+    }
+
+    .searchOptionsActive .icon {
+        font-size: 13px;
+    }
+
+    .searchOptionsActive:hover{
+        /* background: var(--color-primary-600); */
+        cursor: pointer;
     }
 
     .searchOptions span {
